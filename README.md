@@ -1,37 +1,192 @@
-# Bhatti House Restaurant Management System
+# DineFlow
 
-A mobile-first, QR-based restaurant ordering experience built with HTML, CSS, and vanilla JavaScript.
+### QR-Based Digital Table Ordering System
 
-## Current phase
+> **Scan. Browse. Order. Dine.**
 
-The client-side ordering journey is implemented as a single-page vanilla JavaScript flow:
+DineFlow is a digital table-ordering platform designed to simplify the restaurant dining experience.
 
-- Semantic HTML application shell
-- Shared CSS variables for color, type, spacing, radii, and shadows
-- Responsive layout foundations for desktop and mobile
-- Table selection with inline validation and localStorage persistence
-- Menu category filtering, dish search, vegetarian filtering, and empty-result feedback
-- Inline menu quantity controls with persistent cart state
-- Cart drawer with quantity controls and live billing totals
-- Order review with guest name, kitchen note, and pay-at-table, cash, or online payment states
-- Mock order placement with a persistent order number, itemized bill, and status timeline
-- Separated JavaScript modules for application, table, and menu state
-- Mock menu and order data shaped for a future API integration
+Customers scan a QR code at their table, explore the digital menu, build their order, choose a payment method, and track their order — without waiting for a physical menu or manually placing every order.
 
-## Run locally
+---
 
-Open `index.html` in a browser. No build step or dependency installation is required.
+## 🍽️ The Idea
 
-## Frontend flow
+Traditional restaurant ordering can become slow during busy hours.
 
-1. Welcome and table identification
-2. Menu browsing and category filtering
-3. Cart and quantity management
-4. Billing and order review
-5. Order confirmation and tracking
+DineFlow creates a simple digital flow:
 
-The current order is intentionally mocked in the browser. The storage boundary in `js/app.js` can later be replaced with API calls without changing the customer-facing screens.
+**QR Code → Table → Menu → Cart → Order → Kitchen → Order Tracking**
 
-## Backend boundary
+The goal is to connect the customer and restaurant through one seamless ordering experience.
 
-The frontend is complete as a customer-facing prototype. The next backend phase should replace the storage helpers in `js/app.js` with endpoints for table sessions, menu data, order creation, payment status, and live order tracking. Online payment is intentionally represented as `Payment pending` until a payment provider and server-side verification are connected.
+---
+
+## ✨ Current Features
+
+- 📱 QR-based table entry
+- 🪑 Table identification
+- 🍽️ Digital restaurant menu
+- 🔎 Menu search
+- 🗂️ Food category filtering
+- 🥗 Vegetarian filtering
+- ➕ Add items to cart
+- 🔢 Quantity management
+- 🧾 Order summary
+- 💰 Automatic bill calculation
+- 📝 Customer name & kitchen notes
+- 💳 Multiple payment options
+- 📦 Order confirmation
+- ⏱️ Order status tracking
+- 📱 Responsive interface
+
+---
+
+## 🔄 Customer Journey
+
+### 01 — Scan
+
+Customer scans the QR code placed on their table.
+
+### 02 — Select
+
+The table is identified before entering the ordering experience.
+
+### 03 — Browse
+
+Customer explores the restaurant's digital menu.
+
+### 04 — Build
+
+Items are added to the cart and quantities can be adjusted.
+
+### 05 — Review
+
+Customer reviews the order, charges and total amount.
+
+### 06 — Order
+
+The order is submitted to the restaurant.
+
+### 07 — Track
+
+Customer can follow the order status from received to served.
+
+---
+
+## 🖥️ Product Preview
+
+### Table Entry
+
+![DineFlow Table Entry](assets/images/table-entry.png)
+
+### Digital Menu
+
+![DineFlow Menu](assets/images/menu.png)
+
+### Order Review
+
+![DineFlow Order Review](assets/images/order-review.png)
+
+### Order Tracking
+
+![DineFlow Order Tracking](assets/images/order-tracking.png)
+
+> Screenshots will be updated as the product evolves.
+
+---
+
+## 🛠️ Technology
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+
+### Current Architecture
+
+DineFlow currently focuses on the customer-facing ordering experience.
+
+The platform is being developed toward a complete restaurant ecosystem connecting:
+
+**Customer → Restaurant → Kitchen → Management**
+
+---
+
+## 🚧 Roadmap
+
+### Customer Experience
+- [x] QR table entry
+- [x] Digital menu
+- [x] Cart
+- [x] Order review
+- [x] Order tracking
+
+### Restaurant Operations
+- [ ] Restaurant dashboard
+- [ ] Live order management
+- [ ] Kitchen order display
+- [ ] Table management
+- [ ] Menu management
+- [ ] Order status controls
+
+### Business Intelligence
+- [ ] Sales dashboard
+- [ ] Revenue analytics
+- [ ] Order history
+- [ ] Popular item analytics
+- [ ] Customer insights
+
+### Integrations
+- [ ] Online payment gateway
+- [ ] Real-time order synchronization
+- [ ] QR code generation
+- [ ] Notifications
+
+---
+
+## 🎯 Vision
+
+DineFlow is being developed with a simple vision:
+
+> **Make restaurant ordering faster, simpler and more connected.**
+
+The long-term goal is to create a platform that connects the complete restaurant workflow — from the customer's table to the kitchen and management dashboard.
+
+---
+
+## 📍 Looking for Restaurant Partners
+
+DineFlow is currently being developed and tested as a real-world restaurant technology solution.
+
+We are interested in connecting with:
+
+- Restaurants
+- Cafés
+- Cloud kitchens
+- Food businesses
+- Restaurant owners interested in digital ordering
+
+If you are interested in exploring DineFlow for your restaurant, get in touch.
+
+### 📩 Contact
+
+**Abdul Lateef**  
+Founder / Developer — DineFlow  
+Bhatti Info Tech
+
+📧 abdullateef.cse@gmail.com
+
+🔗 www.linkedin.com/in/abdul-lateef-ai
+
+---
+
+## 📄 License
+
+This project is publicly available for demonstration and portfolio purposes.
+
+**No open-source license is granted.**
+
+© 2026 Abdul Lateef / Bhatti Info Tech. All rights reserved.
