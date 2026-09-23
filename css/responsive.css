@@ -1,0 +1,179 @@
+@media (max-width: 800px) {
+  :root {
+    --space-xl: 4rem;
+  }
+
+  .site-header,
+  .site-footer,
+  .site-main {
+    width: min(100% - 2.5rem, var(--content-width));
+  }
+
+  .foundation-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .welcome-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .welcome-hero-copy {
+    padding-block: 2rem 0;
+  }
+
+  .welcome-hero-image {
+    min-height: 26rem;
+  }
+
+  .restaurant-details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .table-selection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .billing-view,
+  .tracking-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-visual {
+    min-height: 20rem;
+  }
+
+  .visual-dish {
+    width: min(15rem, 62%);
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    padding-block: 1.25rem;
+  }
+
+  .service-label {
+    font-size: 0.65rem;
+  }
+
+  .foundation-intro {
+    padding-block: 2.5rem;
+  }
+
+  .welcome-page {
+    padding-block: 0.5rem 3rem;
+  }
+
+  .welcome-hero-image {
+    min-height: 22rem;
+  }
+
+  .hero-form-controls,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-table-form .primary-action {
+    width: 100%;
+  }
+
+  .details-grid {
+    gap: 1.25rem;
+  }
+
+  .table-selection {
+    padding-block: 2.5rem;
+  }
+
+  h1 {
+    max-width: 10ch;
+    font-size: clamp(2.75rem, 14vw, 4.25rem);
+  }
+
+  .intro-description {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .table-form {
+    padding: 1.25rem;
+  }
+
+  .menu-view,
+  .billing-view,
+  .tracking-view {
+    padding-block: 2.5rem 3rem;
+  }
+
+  .menu-topbar,
+  .tracking-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .menu-topbar h1,
+  .tracking-heading h1,
+  .billing-copy h1 {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-art {
+    min-height: 8.5rem;
+  }
+
+  .cart-drawer {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: min(86vh, 42rem);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    animation-name: sheet-enter;
+  }
+
+  .order-time {
+    text-align: left;
+  }
+
+
+@keyframes sheet-enter {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+  .intro-visual {
+    min-height: 17rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

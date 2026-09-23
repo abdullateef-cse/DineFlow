@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="A refined QR-based restaurant ordering experience.">
+  <title>Bhatti House | Restaurant Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Restaurant brand">
+      <a class="brand" href="index.html" aria-label="Bhatti House home">
+        <span class="brand-mark" aria-hidden="true">BH</span>
+        <span class="brand-name">Bhatti House</span>
+      </a>
+      <span class="service-label">Table service</span>
+    </header>
+
+    <main id="app" class="site-main" aria-live="polite">
+      <p class="app-loading">Preparing your table service...</p>
+      <noscript>
+        <p class="app-loading">Please enable JavaScript to browse the menu and place an order.</p>
+      </noscript>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bhatti Info Tech</span>
+      <span>Restaurant Management System</span>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
