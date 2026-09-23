@@ -74,28 +74,6 @@ Customer can follow the order status from received to served.
 
 ---
 
-## 🖥️ Product Preview
-
-### Table Entry
-
-![DineFlow Table Entry](assets/images/table-entry.png)
-
-### Digital Menu
-
-![DineFlow Menu](assets/images/menu.png)
-
-### Order Review
-
-![DineFlow Order Review](assets/images/order-review.png)
-
-### Order Tracking
-
-![DineFlow Order Tracking](assets/images/order-tracking.png)
-
-> Screenshots will be updated as the product evolves.
-
----
-
 ## 🛠️ Technology
 
 ### Frontend
