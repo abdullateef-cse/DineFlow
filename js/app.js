@@ -121,7 +121,7 @@ function renderMenu(activeCategory = "all", searchQuery = "", vegetarianOnly = f
   const cards = filteredItems.map((item) => {
     const cartItem = appState.cart.find((entry) => entry.id === item.id);
     return `<article class="menu-item">
-      <div class="menu-art menu-art--${item.art}" role="img" aria-label="Illustration of ${item.name}"><span>${item.shortLabel}</span></div>
+      <div class="menu-art menu-art--${item.art}"><img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async"><span aria-hidden="true">${item.shortLabel}</span></div>
       <div class="menu-item-body">
         <div class="menu-item-heading"><h3>${item.name}</h3><span class="food-mark" aria-label="${item.vegetarian ? "Vegetarian" : "Non-vegetarian"}">${item.vegetarian ? "V" : "NV"}</span></div>
         <p>${item.description}</p>
@@ -140,6 +140,10 @@ function renderMenu(activeCategory = "all", searchQuery = "", vegetarianOnly = f
       <div class="menu-grid${cards ? "" : " menu-grid--empty"}">${resultContent}</div>
       ${renderCartBar()}
     </section>`;
+  app.querySelectorAll(".menu-art img").forEach((image) => image.addEventListener("error", () => {
+    image.parentElement.classList.add("is-fallback");
+    image.remove();
+  }));
   bindMenuEvents(activeCategory, searchQuery, vegetarianOnly);
 }
 
